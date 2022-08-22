@@ -26,6 +26,9 @@
 
 > - 关于对象与对象中参数修改是否影响原对象的思考
 
+6. threadLocal
+> - 关于线程安全类 ThreadLocal的使用
+
 ### 二、Design_mode
 
 > 设计模式

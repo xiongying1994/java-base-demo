@@ -25,6 +25,7 @@ import java.util.List;
  * 引用传递（我们不看基本类型，基本类型都是直接修改了值，没什么好说的）
  * 将外界传过来的引用付给对象中的参数，这个参数依然是指向同一个地址的引用
  * get方法 就是直接返回这个参数-----即给出相同的引用，那么外界新建的对象就是这个引用，指向的依然是同一个地址，
+ * @author xiongying
  */
 public class ObjectModify {
     static int[] all;
