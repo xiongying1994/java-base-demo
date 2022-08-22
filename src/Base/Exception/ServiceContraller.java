@@ -1,6 +1,8 @@
 package Base.Exception;
 
 /**
+ * 自定义异常 ServiceException
+ *
  * @Author: xiongying
  * @Date: 2022/5/17 下午5:33
  */

@@ -12,6 +12,7 @@ public class UserOrdinary implements User {
 
     /**
      * 核心方法
+     *
      * @param visitor
      */
     @Override

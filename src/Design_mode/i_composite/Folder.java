@@ -69,6 +69,7 @@ public class Folder implements Component {
     /**
      * 递归的思想
      * 递归 component 下的 Folders 目录
+     *
      * @param all
      * @param component
      */

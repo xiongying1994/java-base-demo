@@ -14,10 +14,10 @@ public class LambdaDemo {
      */
     public void foreachTest() {
         Map ab = new HashMap<Object, Object>();
-        ab.put("A: ","a");
-        ab.put("B: ","b");
-        ab.put("C: ","c");
-        ab.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " +value));
+        ab.put("A: ", "a");
+        ab.put("B: ", "b");
+        ab.put("C: ", "c");
+        ab.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " + value));
     }
 
     /**

@@ -4,15 +4,16 @@ package Tool.compare;
  * @Author: xiongying
  * @Date: 2020/5/28 下午3:30
  */
-public class Student implements Comparable<Student>{
+public class Student implements Comparable<Student> {
 
     private int age;
 
     private String name;
 
-    public Student(){
+    public Student() {
 
     }
+
     public Student(int age, String name) {
         this.age = age;
         this.name = name;

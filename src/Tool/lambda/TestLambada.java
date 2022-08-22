@@ -94,11 +94,11 @@ public class TestLambada {
         System.out.println("---------------------  6   ---------------------------");
 
         Map ab = new HashMap<Object, Object>();
-        ab.put("A: ","a");
-        ab.put("B: ","b");
-        ab.put("C: ","c");
+        ab.put("A: ", "a");
+        ab.put("B: ", "b");
+        ab.put("C: ", "c");
 
-        ab.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " +value));
+        ab.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " + value));
 
         ab.forEach(new BiConsumer() {
             @Override
@@ -158,7 +158,7 @@ public class TestLambada {
 
     }
 
-    public static <T> Comparator < T > comparingInt(ToIntFunction < ? super T > keyExtractor) {
+    public static <T> Comparator<T> comparingInt(ToIntFunction<? super T> keyExtractor) {
         Objects.requireNonNull(keyExtractor);
 
         return (Comparator<T> & Serializable)

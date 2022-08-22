@@ -4,13 +4,13 @@ package Design_mode.c_factorymethod.realexample;
  * AarryList 与 LinkedList 就是工厂模式的一种体现
  * List接口是 工厂接口
  * AarryList与LinkedList 都继承了 List接口，List 继承了 Collection接口
- *
+ * <p>
  * Java中的Collection接口的实现都能通过iterator()方法返回一个迭代器，
- *      而不同的实现的迭代器都在该实现中以内部类的方式对Iterator接口实现的，
- *      然后通过iterator()方法返回。那么，这个iterator()方法就是一种工厂方法。
- *
+ * 而不同的实现的迭代器都在该实现中以内部类的方式对Iterator接口实现的，
+ * 然后通过iterator()方法返回。那么，这个iterator()方法就是一种工厂方法。
+ * <p>
  * iterator接口是 商品接口
- *
+ * <p>
  * 不同的工厂，不同的商品，可以使用同一个抽象的工厂接口和一个抽象的商品接口
  */
 public class TestUse {

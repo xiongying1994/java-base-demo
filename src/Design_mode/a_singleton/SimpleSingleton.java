@@ -30,7 +30,7 @@ class SingletonDemo {
 
     private static final SingletonDemo instance = new SingletonDemo();
 
-    public static SingletonDemo getInstance(){
+    public static SingletonDemo getInstance() {
         return instance;
     }
 }
@@ -38,16 +38,16 @@ class SingletonDemo {
 /**
  * 常用的线程安全的单例模式
  * 懒汉式--静态内部类
- *
  */
 class Singleton {
-    private Singleton(){}
+    private Singleton() {
+    }
 
     private static class SingletonHolder {
         public static final Singleton instance = new Singleton();
     }
 
-    public static final Singleton getInstance(){
+    public static final Singleton getInstance() {
         return SingletonHolder.instance;
     }
 }

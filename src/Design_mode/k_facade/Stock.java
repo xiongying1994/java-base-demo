@@ -10,6 +10,7 @@ import java.util.Random;
 public class Stock {
     /**
      * 模拟是否还有库存
+     *
      * @param product
      * @return
      */

@@ -2,8 +2,9 @@ package Design_mode.c_factorymethod.realexample;
 
 /**
  * 方便演示而实现的简陋的数组list
- * @author a
+ *
  * @param <T>
+ * @author a
  */
 public class ArrayList<T> implements List<T> {
     /**
@@ -33,6 +34,7 @@ public class ArrayList<T> implements List<T> {
 
     /**
      * 添加元素
+     *
      * @param t
      * @return
      */

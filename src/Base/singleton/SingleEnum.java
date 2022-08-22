@@ -7,7 +7,7 @@ package Base.singleton;
 public enum SingleEnum {
     Instance;
 
-    public void function(){
+    public void function() {
         // do something
         System.out.println("i am SingleEnum");
     }

@@ -7,14 +7,17 @@ package Base.singleton;
  * 天生线程安全，因为在类加载时已经创建了单例，仅此一份
  */
 public class SingleHungry {
-    private SingleHungry(){};
+    private SingleHungry() {
+    }
+
+    ;
     private static SingleHungry singleHungry = new SingleHungry();
 
-    public static SingleHungry getInstance(){
+    public static SingleHungry getInstance() {
         return singleHungry;
     }
 
-    public void function(){
+    public void function() {
         // do something
         System.out.println("i am SingleHungry");
     }

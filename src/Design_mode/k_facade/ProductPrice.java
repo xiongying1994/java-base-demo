@@ -8,6 +8,7 @@ package Design_mode.k_facade;
 public class ProductPrice {
     /**
      * 模拟获取商品价格
+     *
      * @param product
      * @return
      */

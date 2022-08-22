@@ -3,7 +3,6 @@ package Design_mode.n_visitor.dispatch;
 /**
  * 从java的静态分派和动态分派 来看一下简单的访问者模式
  * 即实现双重分派
- *
  */
 public class MultiDispatch {
     public static void main(String args[]) {
@@ -30,6 +29,7 @@ class Child extends Father {
 
     /**
      * 这一步是核心
+     *
      * @param c
      */
     void print(Vistor c) {

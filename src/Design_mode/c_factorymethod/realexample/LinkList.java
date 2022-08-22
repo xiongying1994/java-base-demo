@@ -2,8 +2,9 @@ package Design_mode.c_factorymethod.realexample;
 
 /**
  * 方便演示而实现的简陋的单向链表list
- * @author a
+ *
  * @param <T>
+ * @author a
  */
 public class LinkList<T> implements List<T> {
     /**
@@ -37,6 +38,7 @@ public class LinkList<T> implements List<T> {
 
     /**
      * 链表节点
+     *
      * @param <T>
      */
     private static class Node<T> {

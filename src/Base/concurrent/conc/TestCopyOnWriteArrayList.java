@@ -10,7 +10,7 @@ public class TestCopyOnWriteArrayList {
 
     private void test() {
         // 1、初始化CopyOnWriteArrayList
-        List<Integer> tempList = Arrays.asList(new Integer[] { 1, 2 });
+        List<Integer> tempList = Arrays.asList(new Integer[]{1, 2});
         CopyOnWriteArrayList<Integer> copyList = new CopyOnWriteArrayList<>(tempList);
 
         // 2、模拟多线程对list进行读和写

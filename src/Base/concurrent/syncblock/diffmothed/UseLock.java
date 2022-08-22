@@ -8,7 +8,7 @@ public class UseLock {
 
     /*
      * 不同方法里面的synchronized代码块同步执行 改变锁对象，发现两个方法并不是同步执行的
-     * 
+     *
      */
     private static void method1() {
         Service2 s = new Service2();

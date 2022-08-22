@@ -13,8 +13,8 @@ import java.util.concurrent.ForkJoinTask;
  */
 public class ForkJoinServiceTest {
     public static void main(String args[]) throws ExecutionException, InterruptedException {
-        String[] strings = { "a", "ah", "b", "ba", "ab", "ac", "sd", "fd", "ar", "te", "se", "te", "sdr", "gdf", "df",
-                "fg", "gh", "oa", "ah", "qwe", "re", "ty", "ui" };
+        String[] strings = {"a", "ah", "b", "ba", "ab", "ac", "sd", "fd", "ar", "te", "se", "te", "sdr", "gdf", "df",
+                "fg", "gh", "oa", "ah", "qwe", "re", "ty", "ui"};
         List<String> stringList = new ArrayList<>(Arrays.asList(strings));
         ForkJoinPool pool = new ForkJoinPool();
         ForkJoinService forkJoinService = new ForkJoinService(stringList, 20);

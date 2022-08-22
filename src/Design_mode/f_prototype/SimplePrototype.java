@@ -8,6 +8,7 @@ public class SimplePrototype implements Prototype, Cloneable {
 
     /**
      * clone()实现
+     *
      * @return
      */
     @Override
@@ -19,6 +20,7 @@ public class SimplePrototype implements Prototype, Cloneable {
 
     /**
      * 使用
+     *
      * @param args
      */
     public static void main(String args[]) {

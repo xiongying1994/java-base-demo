@@ -7,9 +7,13 @@ package Base.singleton;
  */
 public class SingleLazyDouble {
     private static volatile SingleLazyDouble instance = null;
-    private SingleLazyDouble(){};
 
-    public static final SingleLazyDouble getInstance(){
+    private SingleLazyDouble() {
+    }
+
+    ;
+
+    public static final SingleLazyDouble getInstance() {
         if (instance == null) {
             synchronized (SingleLazyDouble.class) {
                 if (instance == null) {
@@ -20,7 +24,7 @@ public class SingleLazyDouble {
         return instance;
     }
 
-    public void function(){
+    public void function() {
         // do something
         System.out.println("i am SingleLazyDouble");
     }

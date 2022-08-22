@@ -3,6 +3,7 @@ package Design_mode.c_factorymethod;
 /**
  * 工厂方法模式
  * 不仅 商品 进行抽象化，将 工厂 也抽象化
+ *
  * @author a
  */
 public class FactoryMethod {
