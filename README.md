@@ -44,7 +44,9 @@
 > - NIO的测试代码
 
 ### 五、Tool
+1. compare方式
+>- comparetor与compareable
 
-> - compare方式，comparetor与compareable
->- lambda表达式
->- Algorithm
+2. lambda表达式
+
+3. stream流处理
