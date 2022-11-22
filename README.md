@@ -7,7 +7,7 @@
 1. concurrent
 
 > - 并发锁机制
->- 多种锁，并发
+> - 多种锁，并发
 
 2. Exception
 
@@ -16,7 +16,7 @@
 3. List
 
 > - list拷贝-深拷贝与浅拷贝
->- list排序
+> - list排序
 
 4. singleton
 
@@ -29,6 +29,9 @@
 6. threadLocal
 > - 关于线程安全类 ThreadLocal的使用
 
+7. httpUrl
+> - 关于URL，http请求调用方式的几种方法与工具类
+
 ### 二、Design_mode
 
 > 设计模式
@@ -36,8 +39,8 @@
 ### 三、 github
 
 > - 判断 n * i * i 与 n * (i * i)
->- 画星状图
->- 画杨辉三角
+> - 画星状图
+> - 画杨辉三角
 
 ### 四、IO
 
@@ -45,7 +48,7 @@
 
 ### 五、Tool
 1. compare方式
->- comparetor与compareable
+> - comparetor与compareable
 
 2. lambda表达式
 
