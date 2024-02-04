@@ -31,6 +31,8 @@ import java.util.Set;
  * 利用HttpClient进行get、post请求的工具类
  * 整体设计，httpClient在工具类初始化时进行初始化
  *
+ * https://blog.csdn.net/justry_deng/article/details/81042379
+ *
  * @author xiongying
  */
 public class HttpClientUtil {
