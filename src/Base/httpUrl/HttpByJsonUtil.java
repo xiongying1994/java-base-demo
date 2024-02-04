@@ -27,7 +27,7 @@ import java.net.URL;
  * @Date: 2022/11/22 14:36
  */
 public class HttpByJsonUtil {
-    private static final Logger logger = LoggerFactory.getLogger(HttpClientUtil.class);
+    private static final Logger logger = LoggerFactory.getLogger(HttpByJsonUtil.class);
 
     /**
      * 使用HttpClient调用http访问

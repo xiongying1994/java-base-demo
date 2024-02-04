@@ -69,7 +69,11 @@ public class ObjectTransmit {
         }
     }
 
-    //对象产生的方法
+    /**
+     * 对象产生的方法
+     *
+     * @return
+     */
     public Student studentCode() {
         List<Integer> grage = new ArrayList<>();
         grage.add(34);
