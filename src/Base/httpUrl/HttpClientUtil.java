@@ -77,7 +77,7 @@ public class HttpClientUtil {
         return httpGet;
     }
 
-    public String requestGet(String url) {
+    public String doGet(String url) {
         // 响应模型
         CloseableHttpResponse response = null;
         // 初始化Get请求
