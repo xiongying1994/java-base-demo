@@ -47,7 +47,26 @@ class Singleton {
         public static final Singleton instance = new Singleton();
     }
 
-    public static final Singleton getInstance() {
+    public static Singleton getInstance() {
         return SingletonHolder.instance;
+    }
+}
+
+/**
+ * 懒汉式
+ * 双重校验
+ */
+class Singleton2{
+    private Singleton2(){}
+    private static volatile Singleton2 instance2 = null;
+    public static Singleton2 getInstance() {
+        if (instance2 == null) {
+            synchronized(Singleton2.class) {
+                if (instance2 == null) {
+                    instance2 = new Singleton2();
+                }
+            }
+        }
+        return instance2;
     }
 }
