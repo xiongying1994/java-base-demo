@@ -1,20 +1,29 @@
 package Design_mode.s_memento;
 
-//自述历史备忘录
+/**
+ * 自述历史备忘录
+ */
 public class MementoSelf {
     public static void main(String[] args) {
-        OriginatorCaretaker originatorCaretaker = new OriginatorCaretaker();//发起人，同时为负责人
-        originatorCaretaker.changeState("stateOne");    //改变状态
-        IMemento memento = originatorCaretaker.createMemento();    //保存状态
-        originatorCaretaker.changeState("stateTwo");    //改变状态
-        originatorCaretaker.recoverMemento(memento);    //恢复状态
+        // 发起人，同时为负责人
+        OriginatorCaretaker originatorCaretaker = new OriginatorCaretaker();
+        // 改变状态
+        originatorCaretaker.changeState("stateOne");
+        // 保存状态
+        IMemento memento = originatorCaretaker.createMemento();
+        // 改变状态
+        originatorCaretaker.changeState("stateTwo");
+        // 恢复状态
+        originatorCaretaker.recoverMemento(memento);
     }
 }
 
 interface IMemento {
 }
 
-//发起人兼负责人
+/**
+ * 发起人兼负责人
+ */
 class OriginatorCaretaker {
     public String state;
 
@@ -22,18 +31,28 @@ class OriginatorCaretaker {
         this.state = state;
     }
 
-    //创造快照
+    /**
+     * 创造快照
+     *
+     * @return
+     */
     public Memento createMemento() {
         return new Memento(this);
     }
 
-    //恢复状态
+    /**
+     * 恢复状态
+     *
+     * @param memento
+     */
     public void recoverMemento(IMemento memento) {
         Memento m = (Memento) memento;
         changeState(m.state);
     }
 
-    //内部类实现备忘录
+    /**
+     * 内部类实现备忘录
+     */
     private class Memento implements IMemento {
         private String state;
 

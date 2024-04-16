@@ -1,9 +1,15 @@
 package Design_mode.u_iterator;
 
-//方便演示而实现的简陋的单向链表list
+/**
+ * 方便演示而实现的简陋的单向链表list
+ *
+ * @param <T>
+ */
 public class MyLinkedList<T> implements MyList<T> {
-    private int size;    //存放的元素个数,会默认初始化为0
-    private Node<T> first;    //首节点，默认初始化为null
+    // 存放的元素个数,会默认初始化为0
+    private int size;
+    // 首节点，默认初始化为null
+    private Node<T> first;
 
     @Override
     public MyIterator<T> iterator() {
@@ -18,8 +24,7 @@ public class MyLinkedList<T> implements MyList<T> {
             return true;
         }
         Node<T> node = first;
-        while (node.next != null)
-            node = node.next;
+        while (node.next != null) node = node.next;
         node.next = new Node<T>(t, null);
         size++;
         return true;
@@ -28,8 +33,7 @@ public class MyLinkedList<T> implements MyList<T> {
     @Override
     public T get(int index) {
         Node<T> node = first;
-        while (--index >= 0)
-            node = node.next;
+        while (--index >= 0) node = node.next;
         return node.data;
     }
 
@@ -42,8 +46,7 @@ public class MyLinkedList<T> implements MyList<T> {
     public T remove(int index) {
         if (index < 0 || index >= size) return null;
         Node<T> node = first;
-        while (--index > 0)
-            node = node.next;
+        while (--index > 0) node = node.next;
         T element = node.next.data;
         node.next = node.next.next;
         size--;
@@ -66,8 +69,7 @@ public class MyLinkedList<T> implements MyList<T> {
                     return true;
                 }
                 node = node.next;
-            }
-            while (node.next != null);
+            } while (node.next != null);
         } else {
             if (first.data.equals(element)) {
                 first = first.next;
@@ -82,8 +84,7 @@ public class MyLinkedList<T> implements MyList<T> {
                     return true;
                 }
                 node = node.next;
-            }
-            while (node.next != null);
+            } while (node.next != null);
         }
         return false;
     }
@@ -92,8 +93,7 @@ public class MyLinkedList<T> implements MyList<T> {
     public boolean set(int index, T element) {
         if (index < 0 || index >= size) return false;
         Node<T> node = first;
-        while (--index > 0)
-            node = node.next;
+        while (--index > 0) node = node.next;
         node.data = element;
         return true;
     }
@@ -103,7 +103,11 @@ public class MyLinkedList<T> implements MyList<T> {
         return size;
     }
 
-    //链表节点
+    /**
+     * 链表节点
+     *
+     * @param <T>
+     */
     private static class Node<T> {
         T data;
         Node<T> next;
@@ -114,7 +118,9 @@ public class MyLinkedList<T> implements MyList<T> {
         }
     }
 
-    //遍历器
+    /**
+     * 遍历器
+     */
     private class Iterator implements MyIterator<T> {
         private Node<T> next;    //下一个节点
 

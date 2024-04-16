@@ -2,7 +2,9 @@ package Design_mode.s_memento.textEditor;
 
 import java.util.LinkedList;
 
-//文本编辑器
+/**
+ * 文本编辑器
+ */
 public class TextEditor {
     public static void main(String[] args) {
         //使用这个文本编辑器

@@ -1,21 +1,31 @@
 package Design_mode.s_memento;
 
-//备忘录模式
+/**
+ * 备忘录模式
+ */
 public class BlackMemento {
     public static void main(String[] args) {
-        BlankOriginator originator = new BlankOriginator();    //发起人
-        BlackCaretaker caretaker = new BlackCaretaker();    //负责人
-        originator.setState("stateOne");    //设置状态
-        caretaker.saveMemento(originator.createMemento());    //保存信息
-        originator.setState("stateTwo");    //修改状态
-        originator.recoverMemento(caretaker.recoverMemento());//恢复状态
+        //发起人
+        BlankOriginator originator = new BlankOriginator();
+        //负责人
+        BlackCaretaker caretaker = new BlackCaretaker();
+        //设置状态
+        originator.setState("stateOne");
+        //保存信息
+        caretaker.saveMemento(originator.createMemento());
+        //修改状态
+        originator.setState("stateTwo");
+        //恢复状态
+        originator.recoverMemento(caretaker.recoverMemento());
     }
 }
 
 interface MementoIF {
 }
 
-//发起人
+/**
+ * 发起人
+ */
 class BlankOriginator {
     private String state;
 
@@ -35,7 +45,9 @@ class BlankOriginator {
         this.setState(((Memento) memento).getState());
     }
 
-    //以内部类实现备忘录角色
+    /**
+     * 以内部类实现备忘录角色
+     */
     private class Memento implements MementoIF {
         private String state;
 
@@ -49,7 +61,9 @@ class BlankOriginator {
     }
 }
 
-//负责人
+/**
+ * 负责人
+ */
 class BlackCaretaker {
     private MementoIF memento;
 

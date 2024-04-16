@@ -1,6 +1,8 @@
 package Design_mode.t_mediator;
 
-//具体同事
+/**
+ * 具体同事
+ */
 public class PersistentFile implements IPersistent {
     private Object data;
 

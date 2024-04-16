@@ -2,6 +2,9 @@ package Base.concurrent.future;
 
 import java.util.concurrent.*;
 
+/**
+ * Future 方式下，多线程的使用，与线程结果收集
+ */
 public class FutureTest {
     public static void main(String[] args) {
         // 第一种方式

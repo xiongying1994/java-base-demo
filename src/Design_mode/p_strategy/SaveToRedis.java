@@ -1,6 +1,8 @@
 package Design_mode.p_strategy;
 
-//具体策略
+/**
+ * 具体策略
+ */
 public class SaveToRedis implements ISaveData {
     @Override
     public void save(Object data) {

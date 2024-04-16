@@ -1,6 +1,8 @@
 package Design_mode.t_mediator;
 
-//同事（接口）
+/**
+ * 同事（接口）
+ */
 public interface IPersistent {
     void getData(Object data);
 

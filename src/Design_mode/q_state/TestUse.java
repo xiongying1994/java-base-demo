@@ -3,6 +3,8 @@ package Design_mode.q_state;
 /**
  * 状态模式
  *
+ * 实现方式拆分到不同的状态类中，根据状态应用类中的状态判断方法，判断使用哪种具体状态类
+ *
  * @author a
  */
 public class TestUse {

@@ -2,11 +2,18 @@ package Design_mode.u_iterator;
 
 import java.util.Arrays;
 
-//方便演示而实现的简陋的数组list
+/**
+ * 方便演示而实现的简陋的数组list
+ *
+ * @param <T>
+ */
 public class MyArrayList<T> implements MyList<T> {
-    private int size;                //存放的元素个数,会默认初始化为0
-    private Object[] defaultList;    //使用数组存放元素
-    private static final int defaultLength = 10;//默认长度
+    // 存放的元素个数,会默认初始化为0
+    private int size;
+    // 使用数组存放元素
+    private Object[] defaultList;
+    // 默认长度
+    private static final int defaultLength = 10;
 
     public MyArrayList() {                //默认构造函数
         defaultList = new Object[defaultLength];
@@ -17,7 +24,11 @@ public class MyArrayList<T> implements MyList<T> {
         return new Iterator();
     }
 
-    //大小自动增长
+    /**
+     * 大小自动增长
+     *
+     * @param capacity
+     */
     private void ensureCapacity(int capacity) {
         int nowLength = defaultList.length;
         if (capacity >= nowLength) {
@@ -28,7 +39,12 @@ public class MyArrayList<T> implements MyList<T> {
         }
     }
 
-    //添加元素
+    /**
+     * 添加元素
+     *
+     * @param t
+     * @return
+     */
     @Override
     public boolean add(T t) {
         ensureCapacity(size + 1);
@@ -36,7 +52,12 @@ public class MyArrayList<T> implements MyList<T> {
         return true;
     }
 
-    //获取元素
+    /**
+     * 获取元素
+     *
+     * @param index
+     * @return
+     */
     @SuppressWarnings("unchecked")
     @Override
     public T get(int index) {
@@ -54,8 +75,7 @@ public class MyArrayList<T> implements MyList<T> {
     public T remove(int index) {
         if (index < 0 || index >= size) return null;
         T element = (T) defaultList[index];
-        if (index != size - 1)
-            System.arraycopy(defaultList, index + 1, defaultList, index, size - index - 1);
+        if (index != size - 1) System.arraycopy(defaultList, index + 1, defaultList, index, size - index - 1);
         size--;
         return element;
     }
@@ -92,7 +112,9 @@ public class MyArrayList<T> implements MyList<T> {
         return size;
     }
 
-    //迭代器
+    /**
+     * 迭代器
+     */
     private class Iterator implements MyIterator<T> {
         private int next;
 
