@@ -1,7 +1,7 @@
 package Design_mode.j_decorator;
 
 /**
- * 装饰
+ * 装饰-空装饰
  *
  * @author a
  */
