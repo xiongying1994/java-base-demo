@@ -1,12 +1,17 @@
-package Base.concurrent.fork;
+package Base.concurrent.a_fork;
 
 import java.util.concurrent.RecursiveTask;
 
+/**
+ * 子任务有结果返回时的演示案例
+ * @author xiongying
+ */
 public class ForkJoinCalculator extends RecursiveTask<Long> {
 
     private long start;
     private long end;
-    private static final long THRESHOLD = 10000;// 临界值
+    // 临界值
+    private static final long THRESHOLD = 1000;
 
     public ForkJoinCalculator(long start, long end) {
         this.start = start;
@@ -16,7 +21,7 @@ public class ForkJoinCalculator extends RecursiveTask<Long> {
     @Override
     protected Long compute() {
 
-        if (end - start <= 1000) {
+        if (end - start <= THRESHOLD) {
             // 不大于临界值直接计算和
             long sum = 0;
             for (long i = start; i <= end; i++) {

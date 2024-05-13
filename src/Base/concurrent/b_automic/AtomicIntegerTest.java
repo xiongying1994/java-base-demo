@@ -1,7 +1,12 @@
-package Base.concurrent.automic;
+package Base.concurrent.b_automic;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * AtomicInteger：原子更新整型
+ *
+ * @author xiongying
+ */
 public class AtomicIntegerTest {
     static AtomicInteger ai = new AtomicInteger();
 

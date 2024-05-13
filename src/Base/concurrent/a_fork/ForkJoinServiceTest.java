@@ -1,4 +1,4 @@
-package Base.concurrent.fork;
+package Base.concurrent.a_fork;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,8 +8,7 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ForkJoinTask;
 
 /**
- * * Description: Fork/Join执行类 * Designer: jack * Date:
- * 2017/8/3 * Version: 1.0.0
+ * @author xiongying
  */
 public class ForkJoinServiceTest {
     public static void main(String args[]) throws ExecutionException, InterruptedException {

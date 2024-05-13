@@ -1,7 +1,12 @@
-package Base.concurrent.automic;
+package Base.concurrent.b_automic;
 
 import java.util.concurrent.atomic.AtomicStampedReference;
 
+/**
+ * AtomicStampedReference：原子更新带有版本号的引用类型。
+ *
+ * @author xiongying
+ */
 public class AtomicStampedReferenceTest {
     static AtomicStampedReference<Integer> atomicStampedReference = new AtomicStampedReference(0, 0);
 
@@ -12,8 +17,7 @@ public class AtomicStampedReferenceTest {
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                System.out.println(reference + "-" + stamp + "-"
-                        + atomicStampedReference.compareAndSet(reference, reference + 10, stamp, stamp + 10));
+                System.out.println(reference + "-" + stamp + "-" + atomicStampedReference.compareAndSet(reference, reference + 10, stamp, stamp + 10));
             }
         });
 
@@ -21,8 +25,7 @@ public class AtomicStampedReferenceTest {
             @Override
             public void run() {
                 Integer reference = atomicStampedReference.getReference();
-                System.out.println(reference + "-" + stamp + "-"
-                        + atomicStampedReference.compareAndSet(reference, reference + 10, stamp, stamp + 1));
+                System.out.println(reference + "-" + stamp + "-" + atomicStampedReference.compareAndSet(reference, reference + 10, stamp, stamp + 1));
             }
         });
         t1.start();

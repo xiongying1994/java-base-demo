@@ -2,8 +2,11 @@ package Base.concurrent.interrupt;
 
 import java.util.concurrent.TimeUnit;
 
-//无法中断正在运行的线程代码    
+/**
+ * 无法中断正在运行的线程代码
+ */
 class TestRunnable implements Runnable {
+    @Override
     public void run() {
         while (true) {
             // while (!Thread.currentThread().isInterrupted()) {
@@ -16,6 +19,9 @@ class TestRunnable implements Runnable {
     }
 }
 
+/**
+ * @author xiongying
+ */
 public class InterruptThreadTest1 {
     public static void main(String[] args) throws Exception {
         Runnable r = new TestRunnable();

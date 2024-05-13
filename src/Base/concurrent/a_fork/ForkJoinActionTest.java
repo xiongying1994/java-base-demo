@@ -1,8 +1,12 @@
-package Base.concurrent.fork;
+package Base.concurrent.a_fork;
 
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.TimeUnit;
 
+/**
+ *
+ * @author xiongying
+ */
 public class ForkJoinActionTest {
 
     public static void main(String[] args) throws Exception {

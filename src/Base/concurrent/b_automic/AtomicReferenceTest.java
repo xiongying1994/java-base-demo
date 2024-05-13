@@ -1,7 +1,12 @@
-package Base.concurrent.automic;
+package Base.concurrent.b_automic;
 
 import java.util.concurrent.atomic.AtomicReference;
 
+/**
+ * AtomicReference：原子更新引用类型。
+ *
+ * @author xiongying
+ */
 public class AtomicReferenceTest {
     public static AtomicReference<User> atomicUserRef = new AtomicReference<User>();
 

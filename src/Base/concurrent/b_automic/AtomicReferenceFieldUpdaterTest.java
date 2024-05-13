@@ -1,7 +1,12 @@
-package Base.concurrent.automic;
+package Base.concurrent.b_automic;
 
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
+/**
+ * AtomicReferenceFieldUpdater：原子更新引用类型里的字段。
+ *
+ * @author xiongying
+ */
 public class AtomicReferenceFieldUpdaterTest {
     public static void main(String[] args) throws Exception {
         AtomicReferenceFieldUpdater<Dog, String> updater = AtomicReferenceFieldUpdater.newUpdater(Dog.class,

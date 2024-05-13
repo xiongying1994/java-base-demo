@@ -1,12 +1,11 @@
-package Base.concurrent.fork;
+package Base.concurrent.a_fork;
 
 import java.util.List;
 import java.util.concurrent.RecursiveTask;
 import java.util.stream.Collectors;
 
 /**
- * * Description: ForkJoin接口 * Designer: jack * Date:
- * 2017/8/3 * Version: 1.0.0
+ * @author xiongying
  */
 public class ForkJoinService extends RecursiveTask<List<String>> {
 
